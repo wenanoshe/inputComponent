@@ -1,0 +1,132 @@
+.Input {
+  --gray-7: #f2f2f2;
+  --gray-5: #e0e0e0;
+  --gray-3: #828282;
+  --gray-1: #333333;
+
+  --blue-1: #2962ff;
+  --red-3: #d32f2f;
+
+  width: 200px;
+  color: var(--gray-1);
+  text-transform: capitalize;
+  display: grid;
+  gap: 4px;
+  position: relative;
+}
+
+.Input--fullWidth {
+  width: 100%;
+}
+
+.Input textarea::-webkit-scrollbar {
+  appearance: none;
+}
+
+.Input textarea {
+  resize: none;
+}
+
+/* Label */
+.Input__label {
+  grid-row: 1 / 2;
+  font-size: 12px;
+  line-height: 17.38px;
+}
+
+.Input__input:focus ~ .Input__label{
+  color: var(--blue-1);
+}
+
+.Input__input:hover ~ .Input__label--error{
+  color: var(--gray-1);
+}
+
+.Input__label--error,
+.Input__input:focus ~ .Input__label--error{
+  color: var(--red-3);
+}
+
+/* Input itself */
+.Input__input {
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--gray-1);
+  font-weight: 500;
+  padding: 18px 12px;
+  border: 1px solid var(--gray-3);
+  border-radius: 8px;
+}
+
+.Input__input:hover {
+  border-color: var(--gray-1);
+}
+
+.Input__input:focus {
+  outline: none;
+  border-color: var(--blue-1);
+}
+
+.Input__input--error,
+.Input__input--error:focus {
+  border-color: var(--red-3);
+  color: var(--red-3);
+}
+
+.Input__input:disabled {
+  border-color: var(--gray-5);
+  background-color: var(--gray-7);
+}
+
+.Input__input::placeholder {
+  text-transform: capitalize;
+}
+
+/* With Icon */
+
+.Input__input--startIcon {
+  padding-left: 45px;
+}
+
+.Input__input--endIcon {
+  padding-right: 45px;
+}
+
+/* ...Size... */
+.Input__input--sm {
+  padding: 10px 12px;
+}
+
+
+/* Helper text */
+.Input__helper {
+  font-size: 10px;
+  line-height: 14.48px;
+}
+
+.Input__input:focus ~ .Input__helper {
+  color: var(--blue-1);
+}
+
+.Input__input:hover ~ .Input__helper--error {
+  color: var(--gray-1);
+}
+
+.Input__helper--error,
+.Input__input:focus ~ .Input__helper--error{
+  color: var(--red-3);
+}
+
+/* Icons */
+
+.Input__startIcon {
+  position: absolute;
+  top: 0; left: 0;
+  transform:  translate(12px, 37px);
+}
+
+.Input__endIcon {
+  position: absolute;
+  top: 0; right: 0;
+  transform:  translate(-12px, 37px);
+}
