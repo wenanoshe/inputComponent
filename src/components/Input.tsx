@@ -47,14 +47,8 @@ export const Input: React.FC<Props> = ({
 		inputClass += " Input__input--error";
 	}
 
-	if (startIcon) {
-		inputClass += " Input__input--startIcon";
-	}
-
-	if (endIcon) {
-		inputClass += " Input__input--endIcon";
-	}
-
+	startIcon && (inputClass += " Input__input--startIcon");
+	endIcon && (inputClass += " Input__input--endIcon");
 	format === "sm" && (inputClass += " Input__input--sm");
 	fullWidth && (containerClass += " Input--fullWidth");
 

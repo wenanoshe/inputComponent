@@ -25,8 +25,8 @@ function App() {
 			</div>
 			<div className="box">
 				<h4>Icons</h4>
-				<Input startIcon="call" helperText="Are excuseme" />
-				<Input endIcon="lock" value="default value" />
+				<Input startIcon="call" helperText="excuse me" />
+				<Input endIcon="lock" value="Default value" />
 			</div>
 
 			<div className="box">
@@ -44,6 +44,19 @@ function App() {
 				<h4>multiline</h4>
 				<Input multiline />
 			</div>
+
+			<footer className="footer">
+				<div>To see the Icons you need to add the google fonts link</div>
+				<div className="footer__ref">
+					<span>Made by Wenanoshe</span>
+					<a href="https://github.com/wenanoshe">
+						<span>Github</span>
+						<span className="material-symbols-rounded icon">
+							family_history
+						</span>
+					</a>
+				</div>
+			</footer>
 		</div>
 	);
 }

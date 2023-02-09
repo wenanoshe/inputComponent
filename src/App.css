@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+ }
+
+.app {
+  margin: 2rem 10%;
+  display: grid;
+  /* justify-content: center; */
+  grid-template-columns: repeat(2, 1fr); 
+}
+
+.box {
+  min-width: 340px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer__ref a {
+  display: inline-flex;
+  gap: 5px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: #1c313a;
+}
+
+.footer__ref .icon {
+  font-size: 14px;
+}

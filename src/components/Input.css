@@ -49,6 +49,7 @@
 
 /* Input itself */
 .Input__input {
+  width: 100%;
   font-family: inherit;
   font-size: 14px;
   color: var(--gray-1);
@@ -92,11 +93,24 @@
   padding-right: 45px;
 }
 
+/* Icons */
+
+.Input__startIcon {
+  position: absolute;
+  top: 0; left: 0;
+  transform:  translate(12px, 37px);
+}
+
+.Input__endIcon {
+  position: absolute;
+  top: 0; right: 0;
+  transform:  translate(-12px, 37px);
+}
+
 /* ...Size... */
 .Input__input--sm {
   padding: 10px 12px;
 }
-
 
 /* Helper text */
 .Input__helper {
@@ -117,16 +131,4 @@
   color: var(--red-3);
 }
 
-/* Icons */
 
-.Input__startIcon {
-  position: absolute;
-  top: 0; left: 0;
-  transform:  translate(12px, 37px);
-}
-
-.Input__endIcon {
-  position: absolute;
-  top: 0; right: 0;
-  transform:  translate(-12px, 37px);
-}
