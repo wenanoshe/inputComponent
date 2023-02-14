@@ -81,7 +81,7 @@ export const Input: React.FC<Props> = ({
 					disabled={disabled}
 					onChange={handleTAChange}
 					rows={parseInt(rows)}
-				></textarea>
+				/>
 			) : (
 				<input
 					{...props}
